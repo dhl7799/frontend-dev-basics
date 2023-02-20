@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+.search {
+	position: absolute;
+	top: 50%;
+	left: 219px;
+	margin: -300px 100px 100px 400px;
+	width: 512px;
+}
+
+.logo {
+	width: 222px;
+	height: 52px;
+	font-size: 0;
+	overflow: hidden;
+	background: url('/ch03/images/naver.png') no-repeat 0 -158px/442px 428px;
+	margin: 112px 100px 100px 350px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.search .green_window {
+	margin-top: 0;
+	width: 470px;
+	height: 49px;
+	display: inline-block;
+	border: 2px solid #03cf5d;
+}
+
+.search .input_text {
+	margin: 12px 0 0 9px; /* 위 왼쪽 아래 오른쪽 */
+	width: 405px;
+	height: 23px;
+	outline: 0;
+	border: 0;
+	background-color: transparent;
+	font-weight: 700; /* bold가 500 */
+	font-size: 18px;
+}
+
+.search .sch_smit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: visible;
+	width: 49px;
+	height: 49px;
+	border: 0;
+	background: #03cf5d;
+}
+
+.ico_search_submit, .search .btn_keyboard .ico_keyboard, .search .btn_arw .ico_arr
+	{
+	background-image:
+		url(https://s.pstatic.net/static/www/img/2018/sp_search.svg);
+	background-repeat: no-repeat;
+}
+
+;
+a {
+	text-decoration: none;
+}
+
+.ico_search_submit {
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	width: 21px;
+	height: 21px;
+	background-position: -4px -60px;
+}
+
+.search .btn_keyboard {
+	position: absolute;
+	top: 50%;
+	right: 76px;
+	margin-top: -21px;
+	padding: 15px 6px;
+}
+
+.search .btn_keyboard .ico_keyboard {
+	display: block;
+	width: 19px;
+	height: 11px;
+	background-position: -33px -60px;
+}
+
+.search .btn_arw {
+	position: absolute;
+	top: 50%;
+	right: 49px;
+	margin-top: -21px;
+	padding: 19px 12px 19px 6px;
+}
+
+.search .btn_arw .ico_arr {
+	display: block;
+	width: 9px;
+	height: 4px;
+	background-position: -87px -60px;
+}
+
+
+</style>
+</head>
+<header>
+	<h1 class="logo">네이버</h1>
+	<div id="search" class="search">
+		<span class="green_window"> <input type="text" id="query"
+			class="input_text" maxlength="255" /> <a href="#" id="ke_kbd_btn"
+			class="btn_keyboard"> <span class="ico_keyboard"></span>
+		</a> <a href="#" class="btn_arw"> <span class="ico_arr"></span>
+		</a>
+		</span>
+		<!-- green_window -->
+		<button id="search_btn" type="button" title="검색" class="sch_smit">
+			<span class="ico_search_submit"></span>
+		</button>
+	</div>
+	<!-- search -->
+</header>
+<body>
+</body>
+</html>
