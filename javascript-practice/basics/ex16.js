@@ -2,7 +2,6 @@
  * 자바스크립트 함수:  function 타입의 객체
  * 
  */
-
 console.log("=== 함수를 생성하는 방법1: 함수 리터럴 =====");
 function f1(a, b) {
     return a + b;    
@@ -23,7 +22,7 @@ console.log(typeof(f3), f3 instanceof Function, f3(10, 20));
 
 console.log("=== 함수를 생성하는 방법4: 익명(anonymous) 함수 =====");
 setTimeout(function() {
-    console.log("time out!");
+    console.log("time out!!");
 }, 10);
 
 console.log("=== 익명(anonymous) 함수의 또 다른 예: 한번 만(즉시) 실행하는 함수 =====");
