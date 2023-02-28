@@ -9,13 +9,21 @@
 <title>Insert title here</title>
 <script src="${pageContext.request.contextPath }/jquery/jquery-3.6.0.js"></script>
 <script>
-$(function(){
+$(function() {
+	var vo = {
+		name: "둘리",
+		password: "1234",
+		message: "호이~"
+	};
+	
 	$("button").click(function(){
 		$.ajax({
-			url: "${pageContext.request.contextPath}/api/json",
+			url: "${pageContext.request.contextPath}/api/post02",
 			async: true,
-			type: "get",
-			dataType: "json",
+			type: "post",
+			dataType: "json",	
+			contentType: "application/json",
+			data: JSON.stringify(vo),
 			success: function(response) {
 				if(response.result === "fail") {
 					console.error(response.message);
@@ -42,7 +50,7 @@ $(function(){
 <body>
 	<h1>AJAX Test: JSON Format Data: $.ajax() 함수 사용하기</h1>
 	
-	<button>데이터 가져오기</button>
+	<button>데이터 보내기(post, delete, put)</button>
 	<div id="data"></div>
 </body>
 </html>

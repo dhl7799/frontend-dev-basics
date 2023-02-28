@@ -1,7 +1,7 @@
 imageViewer = {
 	
 	init: function() {
-		$(document).ready(function() {
+		$(function() {
 			$("#btn-change").click(function() {
 				imageViewer._changeImage();
 			});
@@ -21,7 +21,7 @@ imageViewer = {
 		});
 	},
 	_valid: false,
-	_currentIndex: -1,
+	_currentIndex: 6,
 	
 	_repeating : null,
 					
